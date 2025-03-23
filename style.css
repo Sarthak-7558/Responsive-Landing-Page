@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+}
+.top{
+    min-height: 60vh;
+    width: 100%;
+    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 50% 60%;
+
+}
+.overlay{  
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: relative;
+    
+}
+.text{
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    padding: 0  10vw 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.978);
+
+}
+.text-right{
+    display: flex;
+    width: 70%;
+   gap: 11px;
+   
+
+}
+.text-right p{
+    font-size: 14.5px;
+    width:100% ;
+    
+    gap: 25px;
+   
+}
+.icon{
+    display: flex;
+    gap: 15px;
+  
+   
+}
+.icon i{
+    font-size: 24px; 
+    color: #333; 
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+.icon :hover{
+    color: white;
+}
+
+
+.text h1{
+    font-size: 6vw;
+    font-weight: 500;
+    color: white;
+}
+
+
+.bottom{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;  
+}
+.bone{
+    padding: 30px;
+    background-color: white; 
+    width: 25%;
+    min-height: inherit;
+    
+}
+.bone p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.btwo{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1530007874544-a6f7674b5a47?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXwyMjgyMDE0fHxlbnwwfHx8fHw%3D);
+    background-size: cover;
+    background-position: 30% 70%;
+   
+}
+.bthree{
+    
+    width: 20%;
+    min-height: inherit;
+   
+      
+}
+.bthreetop{
+    background-color: rgba(236, 115, 9, 0.834);
+    width: 100%;
+    min-height: 20vh;
+    padding: 15px;
+    color: white;
+    
+}
+.bthreetop p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.bthreebottom{
+   background-image: url(https://images.unsplash.com/photo-1728327511538-e9624254ed84?w=294&dpr=2&h=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8Nl9ha0R2M3JHM1V8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 20vh;
+    
+}
+
+
+.bfour{
+    background-color: #444;
+    color: white;
+    width: 30%;
+    min-height: inherit;
+    padding: 30px;
+   
+}
+.notf{
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+
+}
+.notf .photo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: red;
+}
+.notf p{
+    width: 80%;
+    font-size: 16x;
+}
+
+@media (max-width:500px) {
+
+    .overlay .text{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .overlay .text h1{
+        font-size: 10vw;
+       
+    }
+    .overlay .text .text-right{
+        flex-direction: column;
+        
+
+    }
+    .overlay .text .text-right p{
+        flex-direction: column;
+        width: initial;
+        
+
+    }
+    .overlay .text .text-right .icons{
+       margin-top: 30px;
+        
+
+    }
+
+    .bottom{
+        flex-direction: column;
+    }
+    .bottom .bone{
+        width: 100%;
+
+    }
+    .bottom .btwo{
+        width: 100%;
+
+    }
+    .bottom .bthree{
+        width: 100%;
+        min-height: 40vh;
+
+    }
+    .bottom .bfour{
+        width: 100%;
+
+    }
+    .bthreebottom{
+        min-height: 40vh;
+    }
+    .bthreetop{
+        min-height: 25vh;
+    }
+    
+    
+}
